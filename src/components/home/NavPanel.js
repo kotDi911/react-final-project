@@ -24,7 +24,7 @@ const NavPanel = () => {
    }, [width])
 
     return (
-        <div className={`flex column ${isBurger && "burger-panel"} ${isActive ? "active-p" : "disable-p"}`}>
+        <div className={`flex column ${isBurger && "burger-panel"} ${!isActive ? "active-p" : "disable-p"}`}>
             {isBurger && <BurgerBtn onClick={handleClick} isActive={isActive}/>}
             <div className="avatar flex column">
                 <div className="avatar__container">

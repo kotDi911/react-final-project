@@ -41,7 +41,7 @@ const RegisterForm = ({onClick}) => {
         <form className="form" onSubmit={handleSubmit}>
             <Input name="login"
                    type="email"
-                   placeholder="LoginForm"
+                   placeholder="Email"
                    value={values.login}
                    onChange={handleChange}
                    onBlur={handleBlur}
