@@ -1,0 +1,41 @@
+.loader {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  animation: opacity 2s ease;
+
+  &__logo {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 65px;
+    color: #000000;
+  }
+
+  &__text {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 65px;
+    color: #000000;
+  }
+
+  &__img1 {
+    position: absolute;
+    bottom: -80%;
+    left: -35%;
+  }
+
+  &__img2 {
+    position: absolute;
+    top: -80%;
+    right: -50%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
