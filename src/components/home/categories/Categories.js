@@ -70,7 +70,7 @@ const Categories = () => {
             <div className="flex column right-panel">
                 <div className="promotion">
                     <img src={prom} alt="" className="promotion__img"/>
-                    <img className="promotion__mark"/>
+                    {/*<span className="promotion__mark"/>*/}
                     <p className="promotion__text">the full price of burgers</p>
                     <h3 className="promotion__title">-50% Off</h3>
                 </div>

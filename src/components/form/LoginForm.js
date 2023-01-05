@@ -40,7 +40,7 @@ const LoginForm = ({isLogin, onClick}) => {
                         setTimeout(() =>{
                             navigate("/home");
                         }, 2000)
-                        localStorage.setItem("user", JSON.stringify(user.uid));
+                        sessionStorage.setItem("user", JSON.stringify(user.uid));
                     }
                 }).catch(err => {
                     if (err.message.includes("user")) {

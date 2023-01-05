@@ -13,7 +13,7 @@
 }
 
 .avatar {
-  margin: 107px auto 40px;
+  margin: 70px auto 40px;
   &__img {
     width: 64px;
     position: absolute;
@@ -86,7 +86,7 @@
     position: absolute;
     top: 35px;
     border-right: 1px solid #4375bc;
-    z-index: 1;
+    z-index: 3;
     background: #c2ddff;
     height: 795px;
 

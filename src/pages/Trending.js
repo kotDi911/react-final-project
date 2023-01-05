@@ -1,8 +1,11 @@
 import React from "react";
+import Header from "../components/home/Header";
 
 const Trending = () => {
     return(
-        <div className="container">Trending</div>
+        <div className="container">
+            <Header/>
+        </div>
     )
 }
 

@@ -82,11 +82,10 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column-reverse;
-  padding-left: 22px;
 
   &__img {
     position: absolute;
-    right: -2%;
+    right: 0;
   }
 
   &__mark {
@@ -98,7 +97,7 @@ p {
     font-size: 24px;
     line-height: 27px;
     color: #FFFFFF;
-    margin: 0;
+    margin: 0 0 0 22px;
   }
 
   &__text {
@@ -106,6 +105,6 @@ p {
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
-    margin: 7px 0 30px;
+    margin: 7px 0 30px 22px;
   }
 }
