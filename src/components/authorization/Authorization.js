@@ -20,7 +20,7 @@ const Authorization = () => {
             <img className="tr-img" src={leaf} alt="img"/>
             <img className="bl-img" src={apple} alt="img"/>
             <img className="br-img" src={orange} alt="img"/>
-            <Logo text="Welcome To Yelp App"/>
+            <Logo className={true} text="Welcome To Yelp App"/>
             {isLogin ? <LoginForm isLogin={isLogin} onClick={toggleAuth}/> : <RegisterForm onClick={toggleAuth}/>}
         </div>
     )
