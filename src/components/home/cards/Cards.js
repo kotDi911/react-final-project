@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Card from "./Card";
 import img1 from "../../../assets/card/img1.png"
 import img2 from "../../../assets/card/img2.png"
@@ -84,7 +84,6 @@ const Cards = ({path}) => {
               break;
       }
     }
-
     return (
         <div className="cards">
             {data.map((card) => renderCards(card))}

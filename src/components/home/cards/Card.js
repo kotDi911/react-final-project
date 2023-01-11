@@ -5,13 +5,22 @@ import {BasketContext} from "../../../context/BasketContext";
 
 const Card = ({img, title, description, price, mark, markBg}) => {
     const [addToBasket, setAddToBasket] = useState(false);
-    const {addCard, isEmpty} = useContext(BasketContext);
+    const {cards, addCard, isEmpty} = useContext(BasketContext);
 
     useEffect(()=>{
         if(isEmpty){
             setAddToBasket(false)
         }
-    },[isEmpty])
+        checkAtBasket(title)
+    },[isEmpty, title])
+
+    const checkAtBasket = (title) => {
+        cards.filter((el) => {
+            if(el.title === title) {
+                setAddToBasket(true)
+            }
+        })
+    }
 
     const handleClick = () => {
         if (!addToBasket) {

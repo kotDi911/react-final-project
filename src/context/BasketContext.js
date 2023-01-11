@@ -31,12 +31,15 @@ export const BasketProvider = (props) => {
     }
 
     const deleteCard = (card) => {
+        card.setAddToBasket(false)
         const updateCounts = cards.filter((el) => {
             if(el.title !== card.title) {
-                card.setAddToBasket(false)
                 return {...el}
             }
         })
+        if(cards.length <= 0){
+            setIsEmpty(false);
+        }
         setCards(updateCounts)
     }
 
