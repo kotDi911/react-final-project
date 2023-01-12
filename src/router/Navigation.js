@@ -1,34 +1,34 @@
 import React from "react";
 import Li from "../components/home/Li";
-import home from "../assets/menus/home.svg"
-import menu from "../assets/menus/menu.svg"
-import trending from "../assets/menus/trending.svg"
-import setting from "../assets/menus/setting.svg"
+import {ReactComponent as HomeImg} from "../assets/menus/home.svg"
+import {ReactComponent as MenuImg} from "../assets/menus/menu.svg"
+import {ReactComponent as TrendingImg} from "../assets/menus/trending.svg"
+import {ReactComponent as SettingImg} from "../assets/menus/setting.svg"
 import {useLocation} from "react-router";
 
 const links = [
     {
         id: 1,
         path: "/home",
-        img: home,
+        img: <HomeImg className="nav__img"/>,
         title: "Home",
     },
     {
         id: 2,
         path: "/menu",
-        img: menu,
+        img: <MenuImg className="nav__img"/>,
         title: "Menu"
     },
     {
         id: 3,
         path: "/trending",
-        img: trending,
+        img: <TrendingImg className="nav__img"/>,
         title: "Trending"
     },
     {
         id: 4,
         path: "/settings",
-        img: setting,
+        img: <SettingImg className="nav__img"/>,
         title: "Settings"
     }
 ]

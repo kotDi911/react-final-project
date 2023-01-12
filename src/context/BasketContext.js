@@ -37,8 +37,8 @@ export const BasketProvider = (props) => {
                 return {...el}
             }
         })
-        if(cards.length <= 0){
-            setIsEmpty(false);
+        if(cards.length <= 1){
+            setIsEmpty(true);
         }
         setCards(updateCounts)
     }

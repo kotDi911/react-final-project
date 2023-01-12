@@ -12,7 +12,7 @@ const Card = ({img, title, description, price, mark, markBg}) => {
             setAddToBasket(false)
         }
         checkAtBasket(title)
-    },[isEmpty, title])
+    },[isEmpty])
 
     const checkAtBasket = (title) => {
         cards.filter((el) => {

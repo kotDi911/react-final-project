@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from "react";
-import Header from "../components/home/Header";
+import HomeHeader from "../components/home/HomeHeader";
 import Categories from "../components/home/categories/Categories";
 import {useNavigate} from "react-router";
 import {BasketContext} from "../context/BasketContext";
@@ -13,7 +13,7 @@ const Home = () => {
     
     return (
         <div className="container">
-            <Header/>
+            <HomeHeader/>
             <Categories/>
             {isShowPanel && <BasketMenu/>}
         </div>

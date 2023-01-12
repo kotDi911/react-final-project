@@ -19,7 +19,7 @@ a {
   }
   & .nav__img {
     background: #DF4545;
-    color: #FFFFFF;
+    stroke: white;
   }
 }
 
@@ -30,6 +30,7 @@ a {
     padding: 11px 15px;
     border-radius: 15px;
     background: white;
+    stroke: #909090;
   }
   &__link {
     text-align: center;
