@@ -5,6 +5,7 @@ const Menu = () => {
     return(
         <div className="container">
             <Header/>
+            <h1 className="construct">Under construction ...</h1>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import {useFormik} from "formik";
 import * as Yup from "yup";
 import {getAuth, createUserWithEmailAndPassword} from "firebase/auth"
 
-import app from "../base";
+import app from "../../base";
 import {useNavigate} from "react-router";
 const auth = getAuth();
 

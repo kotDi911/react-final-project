@@ -5,7 +5,7 @@ import * as Yup from "yup";
 import {useNavigate} from "react-router";
 import {AuthContext} from "../../context/AuthContext";
 import {getAuth, signInWithEmailAndPassword} from "firebase/auth";
-import app from "../base";
+import app from "../../base";
 
 const auth = getAuth();
 

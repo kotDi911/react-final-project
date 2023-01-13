@@ -66,6 +66,9 @@
   .auth {
     width: 25%;
   }
+  .cards{
+    height: 300px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -115,6 +118,9 @@
   }
   .message__small-img1, .message__small-img2 {
     width: 20px;
+  }
+  .cards{
+    height: 360px;
   }
 }
 
@@ -169,6 +175,9 @@
   .auth {
     width: 30%;
   }
+  .cards{
+    height: 370px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -181,10 +190,12 @@
   }
   .message {
     margin: 0;
+
     &__container {
       margin-bottom: 15px;
     }
-    &__marks{
+
+    &__marks {
       height: 110%;
     }
   }
