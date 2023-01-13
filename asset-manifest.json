@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-final-project/static/css/main.2367b9dd.css",
-    "main.js": "/react-final-project/static/js/main.6739750b.js",
+    "main.css": "/react-final-project/static/css/main.292b148e.css",
+    "main.js": "/react-final-project/static/js/main.d616423a.js",
     "static/media/img3.png": "/react-final-project/static/media/img3.532acaaffa04ec0990ca.png",
     "static/media/img1.png": "/react-final-project/static/media/img1.331e2ecc8dbc6a242f24.png",
     "static/media/img2.png": "/react-final-project/static/media/img2.eb9d2321c8e94320b41a.png",
@@ -20,21 +20,19 @@
     "static/media/basket.svg": "/react-final-project/static/media/basket.892ba5cc18e206749fe087ab772ccee3.svg",
     "static/media/menu.svg": "/react-final-project/static/media/menu.23c9bad010342e24894e7e72d5c69381.svg",
     "static/media/home.svg": "/react-final-project/static/media/home.07845e130b46396df99012c2ff3675d7.svg",
-    "index.html": "/react-final-project/index.html",
-    "static/media/left_arrow.svg": "/react-final-project/static/media/left_arrow.47dc8e037ddd118352bfb915ac2c89bc.svg",
-    "static/media/right_arrow.svg": "/react-final-project/static/media/right_arrow.aad1cdf0640d93c50cf965011c6d3306.svg",
     "static/media/arrow.svg": "/react-final-project/static/media/arrow.23b8cdf3bb68c29a8ee85c2d6d91cb7f.svg",
     "static/media/basket_plus.svg": "/react-final-project/static/media/basket_plus.09738874075a759807eef5f195e60202.svg",
+    "index.html": "/react-final-project/index.html",
     "static/media/find.svg": "/react-final-project/static/media/find.cc4954ffb54dcdafdcce74675112baf5.svg",
     "static/media/basket_minus.svg": "/react-final-project/static/media/basket_minus.224c79a204021cb121fee513e04b4af5.svg",
     "static/media/select.svg": "/react-final-project/static/media/select.2e5b71c20ff98d0cdf560bc163f70a28.svg",
     "static/media/filter.svg": "/react-final-project/static/media/filter.74289f17e0e446e146651dc54ff89813.svg",
     "static/media/plus.svg": "/react-final-project/static/media/plus.3fd698ba19dde974447b47366eff5648.svg",
-    "main.2367b9dd.css.map": "/react-final-project/static/css/main.2367b9dd.css.map",
-    "main.6739750b.js.map": "/react-final-project/static/js/main.6739750b.js.map"
+    "main.292b148e.css.map": "/react-final-project/static/css/main.292b148e.css.map",
+    "main.d616423a.js.map": "/react-final-project/static/js/main.d616423a.js.map"
   },
   "entrypoints": [
-    "static/css/main.2367b9dd.css",
-    "static/js/main.6739750b.js"
+    "static/css/main.292b148e.css",
+    "static/js/main.d616423a.js"
   ]
 }
