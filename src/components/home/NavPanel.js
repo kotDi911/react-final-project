@@ -37,7 +37,7 @@ const NavPanel = () => {
                 <img className="delivery__img" src={delivery} alt="delivery"/>
                 <div className="flex space-b delivery__link">
                     <span className="delivery__small">Know More</span>
-                    <img src={arrow} alt="arrow"/>
+                    <img src={arrow} alt="arrow" className="delivery__btn"/>
                 </div>
                 <span className="delivery__title">Faster delivery!</span>
             </div>

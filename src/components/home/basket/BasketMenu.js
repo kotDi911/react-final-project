@@ -17,7 +17,7 @@ const CleanBasket = () => {
 }
 
 const BasketMenu = () => {
-    const {cards, hidePanel, clearBasket} = useContext(BasketContext);
+    const {cards, hidePanel, clearBasket, isEmpty} = useContext(BasketContext);
     const sumAllPositions = () => {
         let sum = 0;
         cards.forEach((card) => {
@@ -25,10 +25,9 @@ const BasketMenu = () => {
         })
         return ("Order - $" + sum)
     }
-    console.log(cards)
     return (
         <>
-            <div className="basket__menu flex column" style={!cards.length ? {justifyContent: "center"} : undefined}>
+            <div className={`basket__menu flex column ${isEmpty && "center"}`}>
                 {!cards.length ?
                     <CleanBasket/>
                     :

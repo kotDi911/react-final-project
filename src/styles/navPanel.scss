@@ -1,34 +1,23 @@
-.flex {
-  display: flex;
-}
-.column {
-  flex-direction: column;
-  align-items: center;
-}
-.column-r{
-  flex-direction: column-reverse;
-}
-.space-b{
-  justify-content: space-between;
-}
-
 .avatar {
   margin: 85px auto 40px;
+
   &__img {
     width: 64px;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
   }
-  &__container{
+
+  &__container {
     width: 80px;
     height: 80px;
     background: #FFFFFF;
     border-radius: 15px;
     position: relative;
   }
-  &__name{
+
+  &__name {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -36,70 +25,106 @@
   }
 }
 
-.nav{
+.nav {
   list-style-type: none;
   padding: 0;
 }
 
-.delivery{
+.delivery {
   position: relative;
   height: 162px;
   background: white;
   margin: 120px 35px 35px;
   width: 184px;
   border-radius: 15px;
-  &__img{
+
+  &__img {
     position: absolute;
     top: -70%;
   }
-  &__link{
+
+  &__link {
     margin: 12px 26px;
     font-weight: 700;
     font-size: 10px;
     line-height: 11px;
-    color: #000000;  }
-  &__title{
+    color: #000000;
+  }
+
+  &__title {
     margin: 0 26px;
     width: 90px;
     font-weight: 800;
     font-size: 18px;
     line-height: 20px;
     color: #000000;
+    cursor: default;
+  }
+
+  &__small {
+    cursor: default;
+  }
+
+  &__btn {
+    cursor: pointer;
   }
 }
-.burger{
-  &-btn{
+
+.burger {
+  &-btn {
     position: absolute;
-    right: -50px;
-    top: 160px;
-    background: #c2ddff;
-    height: 50px;
-    width: 48px;
-    border: 1px solid #4375bc;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
-    box-shadow: inset -4px 0px 2px 1px #80b5ff;
+    top: 0;
+    background: #F3F3F3;
+    height: 40px;
+    width: 50px;
+    border-radius: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 0;
   }
-  &-panel{
+
+  &-panel {
     position: absolute;
     top: 35px;
-    border-right: 1px solid #4375bc;
     z-index: 3;
-    background: #c2ddff;
-    height: 795px;
-
+    background: #DEEBFB;
+    width: 30%;
+    height: 811px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
-  &-img{
+
+  &-img {
     width: 70%;
   }
 }
-.active-p{
-  left: -215px;
+
+.active-p, .disable-p, .disable-btn {
   transition: 1s ease;
 }
-.disable-p{
+
+.active-p {
+  left: -30%;
+}
+
+.disable-p {
   left: 0;
-  transition: 1s ease;
+}
+
+.active-btn {
+  width: 100%;
+  left: 0;
+  transition: 0.5s ease;
+}
+
+.disable-btn {
+  left: 103%;
+}
+
+.hr {
+  width: 60%;
+  height: 4px;
+  background: black;
 }

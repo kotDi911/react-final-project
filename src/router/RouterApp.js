@@ -11,14 +11,16 @@ import Authorization from "../components/authorization/Authorization";
 import PrivateRoute from "./PrivateRoute'";
 import {AuthContext} from "../context/AuthContext";
 import Loader from "../components/Loader";
+import LoginForm from "../components/form/LoginForm";
+import RegisterForm from "../components/form/RegisterForm";
 
 const RouterApp = () => {
     const {pathname} = useLocation();
     const navigate = useNavigate()
     const {setCurrentUser} = useContext(AuthContext);
-    const user = JSON.parse(sessionStorage.getItem("user"));
+    const user = JSON.parse(localStorage.getItem("user"));
 
-    useEffect( () => {
+    useEffect(() => {
         if (user) {
             setCurrentUser(user)
             if (pathname === "/") {
@@ -32,9 +34,18 @@ const RouterApp = () => {
 
     return (
         <>
-            {pathname !== "/" && pathname !== "/load" && <NavPanel/>}
+            {
+                pathname !== "/" &&
+                pathname !== "/load" &&
+                pathname !== "/login" &&
+                pathname !== "/register" &&
+                <NavPanel/>
+            }
             <Routes>
-                <Route path="/" element={<Authorization/>}/>
+                <Route path="/" element={<Authorization/>}>
+                    <Route path="login" element={<LoginForm/>}/>
+                    <Route path="register" element={<RegisterForm/>}/>
+                </Route>
                 <Route path="/load" element={<Loader/>}/>
                 <Route path="/home"
                        element={

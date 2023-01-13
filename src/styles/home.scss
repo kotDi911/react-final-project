@@ -24,6 +24,7 @@
     font-size: 48px;
     line-height: 65px;
     margin: 0;
+    cursor: default;
   }
 
   &__img {
@@ -36,6 +37,9 @@
 
 .auth {
   width: 21%;
+  &.logo{
+    margin: 20px auto;
+  }
 }
 
 .panel {
@@ -53,6 +57,7 @@
 .search, .exit {
   background: #F3F3F3;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .active {
@@ -74,8 +79,6 @@
   padding: 15px 0;
 
   &__container {
-    overflow-y: scroll;
-    height: 610px;
     padding: 0 60px;
     align-items: flex-start;
     flex: 70%;
@@ -117,6 +120,9 @@
   &__img {
     margin-left: 30px;
   }
+  &__title {
+    cursor: default;
+  }
 }
 
 .filter, .articles {
@@ -131,10 +137,15 @@
   align-items: center;
   margin-bottom: 23px;
 
+  &__title {
+  cursor: default;
+  }
+
   &__img {
     padding: 20px 16px;
     border-radius: 15px;
     background: #F3F3F3;
+    cursor: pointer;
   }
 }
 

@@ -9,7 +9,7 @@ import app from "../base";
 
 const auth = getAuth();
 
-const LoginForm = ({isLogin, onClick}) => {
+const LoginForm = () => {
     const {setCurrentUser} = useContext(AuthContext)
     const navigate = useNavigate();
 
@@ -21,26 +21,24 @@ const LoginForm = ({isLogin, onClick}) => {
         validationSchema: Yup.object({
             login: Yup.string()
                 .email("login must be a valid: user@exemple.com")
-                .required(),
+                .required("Login is a required"),
             password: Yup.string()
                 .min(6, "password mast be > 5 symbols")
                 .max(15, "password mast be < 15 symbols")
                 .matches(/^[\w.-]+$/, 'password can only contain latin letters, numbers, and symbols: "_", "-"')
-                .required(),
+                .required("Password is a required"),
         }),
         onSubmit: async ({login, password}) => {
             await signInWithEmailAndPassword(auth, login, password)
                 .then((userCredential) => {
                     const user = userCredential.user;
                     if (user) {
-
                         setCurrentUser(user);
-
                         navigate("/load");
-                        setTimeout(() =>{
+                        setTimeout(() => {
                             navigate("/home");
                         }, 2000)
-                        sessionStorage.setItem("user", JSON.stringify(user.uid));
+                        localStorage.setItem("user", JSON.stringify(user.uid));
                     }
                 }).catch(err => {
                     if (err.message.includes("user")) {
@@ -74,7 +72,7 @@ const LoginForm = ({isLogin, onClick}) => {
                    errors={errors.password}
             />
             <button className="submit-btn" type="submit">Submit</button>
-            {isLogin && <span className="register-btn" onClick={onClick}>dont have an account</span>}
+            <span className="register-btn" onClick={() => navigate("/register")}>dont have an account</span>
         </form>
     )
 }

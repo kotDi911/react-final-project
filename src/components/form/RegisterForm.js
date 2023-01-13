@@ -5,9 +5,11 @@ import * as Yup from "yup";
 import {getAuth, createUserWithEmailAndPassword} from "firebase/auth"
 
 import app from "../base";
+import {useNavigate} from "react-router";
 const auth = getAuth();
 
-const RegisterForm = ({onClick}) => {
+const RegisterForm = () => {
+    const navigate = useNavigate()
     const {handleSubmit, handleChange, values, errors, touched, handleBlur} = useFormik({
         initialValues: {
             login: "",
@@ -17,20 +19,20 @@ const RegisterForm = ({onClick}) => {
         validationSchema: Yup.object({
             login: Yup.string()
                 .email("login must be a valid: user@exemple.com")
-                .required(),
+                .required("Login is a required"),
             password: Yup.string()
                 .min(6, "password mast be > 5 symbols")
                 .max(15, "password mast be < 15 symbols")
                 .matches(/^[\w.-]+$/, 'password can only contain latin letters, numbers, and symbols: "_", "-"')
-                .required(),
+                .required("Password is a required"),
             confirmPassword: Yup.string()
                 .oneOf([Yup.ref("password"), ""], "password must match")
-                .required()
+                .required("Confirm password is a required")
         }),
         onSubmit: async ({login, password}) => {
             try {
                 await createUserWithEmailAndPassword(auth, login, password);
-                onClick();
+                navigate("/login")
             } catch (err){
                 errors.login = err.code
             }

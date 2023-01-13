@@ -7,7 +7,7 @@ const Header = () => {
     const navigate = useNavigate()
     const signOut = () => {
         navigate("/")
-        sessionStorage.removeItem("user")
+        localStorage.removeItem("user")
     }
     return (
         <div className="header">
