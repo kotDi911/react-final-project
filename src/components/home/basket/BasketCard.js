@@ -8,11 +8,11 @@ const BasketCard = (props) => {
     const {countPlus, countMinus, deleteCard} = useContext(BasketContext);
 
     return (
-        <div className="message flex">
+        <div className="basket-card flex">
             <div className="basket__img-box">
                 <img src={img} alt="" className="basket__img"/>
             </div>
-            <div className="message__container flex">
+            <div className="basket-card__container flex">
                 <div>
                     <p className="card__title">
                         {title}
@@ -21,7 +21,7 @@ const BasketCard = (props) => {
                         {description}
                     </p>
                 </div>
-                <div className="message__marks flex">
+                <div className="basket-card__marks flex column">
                     <button className="basket__counter increments"
                             onClick={() => count > 1 ? countMinus(props) : deleteCard(props)}
                     >

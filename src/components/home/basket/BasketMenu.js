@@ -2,7 +2,6 @@ import React, {useContext} from "react";
 import {BasketContext} from "../../../context/BasketContext";
 import BasketCard from "./BasketCard";
 import arrow from "../../../assets/navigation/arrow.svg";
-import img from "../../../assets/articles/grilled-chicken.png";
 import process from "../../../assets/process.png"
 
 const CleanBasket = () => {
@@ -10,7 +9,7 @@ const CleanBasket = () => {
     return (
         <div className="flex column">
             <img className="process__img" src={process} alt="process-img"/>
-            <p className="process__text">in the process of cooking...</p>
+            <p className="process__text">You still don't have a single order</p>
             <button className="order-btn" onClick={() => setIsShowPanel(false)}>Order more</button>
         </div>
     )

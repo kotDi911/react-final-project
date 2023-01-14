@@ -1,8 +1,8 @@
 import React from "react";
-import chicken from "../../../assets/articles/grilled-chicken.png"
-import smile from "../../../assets/articles/smile2.png"
-import cookie from "../../../assets/articles/cookie.png"
-import pizza from "../../../assets/articles/favorite-pizza.png"
+import chicken from "../../../assets/articles/grilled-chicken.svg"
+import smile from "../../../assets/articles/smile2.svg"
+import cookie from "../../../assets/articles/cookie.svg"
+import pizza from "../../../assets/articles/favorite-pizza.svg"
 import Comment from "./Comment";
 
 const comments = [

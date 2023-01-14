@@ -10,10 +10,6 @@
   height: 275px;
 }
 
-p {
-  margin: 0;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -105,6 +101,7 @@ p {
     line-height: 27px;
     color: #FFFFFF;
     margin: 0 0 0 22px;
+    cursor: default;
   }
 
   &__text {
@@ -113,5 +110,6 @@ p {
     line-height: 16px;
     color: #FFFFFF;
     margin: 7px 0 30px 22px;
+    cursor: default;
   }
 }

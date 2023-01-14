@@ -1,14 +1,16 @@
-import React from "react";
+import React, {useContext} from "react";
 import Input from "./Input";
 import {useFormik} from "formik";
+import {useNavigate} from "react-router";
 import * as Yup from "yup";
 import {getAuth, createUserWithEmailAndPassword} from "firebase/auth"
 
 import app from "../../base";
-import {useNavigate} from "react-router";
+import {AuthContext} from "../../context/AuthContext";
 const auth = getAuth();
 
 const RegisterForm = () => {
+    const {setCurrentUser} = useContext(AuthContext)
     const navigate = useNavigate()
     const {handleSubmit, handleChange, values, errors, touched, handleBlur} = useFormik({
         initialValues: {
@@ -31,8 +33,18 @@ const RegisterForm = () => {
         }),
         onSubmit: async ({login, password}) => {
             try {
-                await createUserWithEmailAndPassword(auth, login, password);
-                navigate("/login")
+                await createUserWithEmailAndPassword(auth, login, password)
+                    .then((userCredential) => {
+                        const user = userCredential.user
+                        if (user) {
+                            setCurrentUser(user);
+                            navigate("/load");
+                            setTimeout(() => {
+                                navigate("/home");
+                            }, 2000)
+                            localStorage.setItem("user", JSON.stringify(user.uid));
+                        }
+                    })
             } catch (err){
                 errors.login = err.code
             }

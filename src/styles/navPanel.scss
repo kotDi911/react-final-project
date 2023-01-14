@@ -25,11 +25,6 @@
   }
 }
 
-.nav {
-  list-style-type: none;
-  padding: 0;
-}
-
 .delivery {
   position: relative;
   height: 162px;
@@ -83,6 +78,7 @@
     align-items: center;
     flex-direction: column;
     padding: 5px 0;
+    transition: 1s ease;
   }
 
   &-panel {
@@ -114,9 +110,7 @@
 }
 
 .active-btn {
-  width: 100%;
   left: 0;
-  transition: 0.5s ease;
 }
 
 .disable-btn {
@@ -124,7 +118,39 @@
 }
 
 .hr {
-  width: 60%;
-  height: 4px;
-  background: black;
+  width: 62%;
+  height: 5px;
+  background: #666666;
+  transition: 1s;
+  position: absolute;
+}
+
+.line {
+  &-top {
+    top: 12px;
+  }
+
+  &-bottom {
+    bottom: 12px;
+  }
+
+  &-center {
+    opacity: 1;
+  }
+}
+
+.active-btn .line {
+  &-top {
+    transform: rotateZ(45deg);
+    top: 22px;
+  }
+
+  &-bottom {
+    transform: rotateZ(-45deg);
+    bottom: 22px;
+  }
+
+  &-center {
+    opacity: 0;
+  }
 }

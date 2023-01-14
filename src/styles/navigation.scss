@@ -24,6 +24,9 @@ a {
 }
 
 .nav{
+  list-style-type: none;
+  padding: 0;
+  transition: 0.3s;
   &__img {
     width: 18px;
     height: 22px;
@@ -31,6 +34,7 @@ a {
     border-radius: 15px;
     background: white;
     stroke: #909090;
+    transition: 0.3s;
   }
   &__link {
     text-align: center;

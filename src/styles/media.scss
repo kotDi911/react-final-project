@@ -31,10 +31,8 @@
     width: 25%;
   }
   .message__marks {
-    position: relative;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 5px;
   }
   .logo {
     &__img {
@@ -66,7 +64,7 @@
   .auth {
     width: 25%;
   }
-  .cards{
+  .cards {
     height: 300px;
   }
 }
@@ -119,7 +117,7 @@
   .message__small-img1, .message__small-img2 {
     width: 20px;
   }
-  .cards{
+  .cards {
     height: 360px;
   }
 }
@@ -175,7 +173,7 @@
   .auth {
     width: 30%;
   }
-  .cards{
+  .cards {
     height: 370px;
   }
 }
@@ -193,10 +191,6 @@
 
     &__container {
       margin-bottom: 15px;
-    }
-
-    &__marks {
-      height: 110%;
     }
   }
   .cards {
@@ -227,7 +221,7 @@
     margin-bottom: 25px;
   }
   .delivery {
-    margin: 90px 35px 35px;
+    margin: 90px 35px 35px 0;
 
     &__img {
       top: -65%;
@@ -323,17 +317,24 @@
       left: 210px;
     }
   }
-  .disable-btn {
-    left: 105%;
-  }
   .burger-panel {
     height: 805px;
   }
 }
 
 @media (max-width: 550px) {
-  .basket__menu {
-    width: 50%;
+  .basket {
+    &__menu {
+      width: 50%;
+    }
+
+    &-indicator {
+      font-size: 9px;
+      width: 15px;
+      height: 15px;
+      top: -4px;
+      right: -4px;
+    }
   }
   .burger {
     &-panel {
@@ -405,14 +406,41 @@
     width: 60%;
     padding: 35px;
   }
-  .active-btn {
-    width: 100%;
-  }
   .active-p {
     left: -40%;
   }
-  .disable-btn {
-    left: 100%;
+  .line {
+    &-top {
+      top: 9px;
+    }
+
+    &-bottom {
+      bottom: 9px;
+    }
+
+    &-center {
+      opacity: 1;
+    }
+  }
+
+  .hr{
+    height: 4px;
+  }
+
+  .active-btn .line {
+    &-top {
+      transform: rotateZ(45deg);
+      top: 17px;
+    }
+
+    &-bottom {
+      transform: rotateZ(-45deg);
+      bottom: 17px;
+    }
+
+    &-center {
+      opacity: 0;
+    }
   }
 }
 
@@ -562,6 +590,6 @@
     left: -50%;
   }
   .delivery {
-    margin: 95px auto;
+    margin: 95px auto 0;
   }
 }

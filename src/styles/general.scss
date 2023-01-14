@@ -33,9 +33,15 @@ body {
 .center {
   justify-content: center;
 }
-.construct{
+
+.construct {
   text-align: center;
 }
+
 ::-webkit-scrollbar {
   display: none;
+}
+
+p {
+  margin: 0;
 }

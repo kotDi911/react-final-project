@@ -4,6 +4,7 @@ export const BasketContext = React.createContext();
 
 export const BasketProvider = (props) => {
     const [cards, setCards] = useState([]);
+    const [basketCounter, setBasketCounter] = useState(0);
     const [isEmpty, setIsEmpty] = useState(true);
     const [isShowPanel, setIsShowPanel] = useState(false);
 
@@ -14,8 +15,16 @@ export const BasketProvider = (props) => {
         if (cards.length === 1) {
             setIsShowPanel(true);
         }
+        counter()
     }, [cards])
 
+    const counter = () => {
+        let count = 0;
+        cards.forEach((el) => {
+            count += el.count
+        })
+        setBasketCounter(count)
+    }
     const addCard = (card) => {
         setCards((prevState) => [...prevState, card])
     }
@@ -33,11 +42,11 @@ export const BasketProvider = (props) => {
     const deleteCard = (card) => {
         card.setAddToBasket(false)
         const updateCounts = cards.filter((el) => {
-            if(el.title !== card.title) {
+            if (el.title !== card.title) {
                 return {...el}
             }
         })
-        if(cards.length <= 1){
+        if (cards.length <= 1) {
             setIsEmpty(true);
         }
         setCards(updateCounts)
@@ -62,6 +71,7 @@ export const BasketProvider = (props) => {
             isShowPanel,
             isEmpty,
             setIsShowPanel,
+            basketCounter,
             addCard,
             showPanel,
             hidePanel,
