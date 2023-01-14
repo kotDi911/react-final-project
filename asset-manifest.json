@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-final-project/static/css/main.206d383f.css",
+    "main.css": "/react-final-project/static/css/main.9014c222.css",
     "main.js": "/react-final-project/static/js/main.f925f430.js",
     "static/media/favorite-pizza.svg": "/react-final-project/static/media/favorite-pizza.2827a21fc765bbccbbc29646c6c94373.svg",
     "static/media/cookie.svg": "/react-final-project/static/media/cookie.43a80b5ae21e93ab9b6e5057f5e46507.svg",
@@ -32,11 +32,11 @@
     "static/media/select.svg": "/react-final-project/static/media/select.2e5b71c20ff98d0cdf560bc163f70a28.svg",
     "static/media/filter.svg": "/react-final-project/static/media/filter.74289f17e0e446e146651dc54ff89813.svg",
     "static/media/plus.svg": "/react-final-project/static/media/plus.3fd698ba19dde974447b47366eff5648.svg",
-    "main.206d383f.css.map": "/react-final-project/static/css/main.206d383f.css.map",
+    "main.9014c222.css.map": "/react-final-project/static/css/main.9014c222.css.map",
     "main.f925f430.js.map": "/react-final-project/static/js/main.f925f430.js.map"
   },
   "entrypoints": [
-    "static/css/main.206d383f.css",
+    "static/css/main.9014c222.css",
     "static/js/main.f925f430.js"
   ]
 }
