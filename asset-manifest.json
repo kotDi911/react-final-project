@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/react-final-project/static/css/main.d8d8881f.css",
-    "main.js": "/react-final-project/static/js/main.d616423a.js",
+    "main.css": "/react-final-project/static/css/main.206d383f.css",
+    "main.js": "/react-final-project/static/js/main.f925f430.js",
+    "static/media/favorite-pizza.svg": "/react-final-project/static/media/favorite-pizza.2827a21fc765bbccbbc29646c6c94373.svg",
+    "static/media/cookie.svg": "/react-final-project/static/media/cookie.43a80b5ae21e93ab9b6e5057f5e46507.svg",
+    "static/media/grilled-chicken.svg": "/react-final-project/static/media/grilled-chicken.90198dca55ee988e658e05711d5f6a10.svg",
     "static/media/img3.png": "/react-final-project/static/media/img3.532acaaffa04ec0990ca.png",
     "static/media/img1.png": "/react-final-project/static/media/img1.331e2ecc8dbc6a242f24.png",
     "static/media/img2.png": "/react-final-project/static/media/img2.eb9d2321c8e94320b41a.png",
     "static/media/discount.png": "/react-final-project/static/media/discount.453d8a6cbcb94a618c7d.png",
     "static/media/img4.png": "/react-final-project/static/media/img4.bfe939aa372417085c29.png",
+    "static/media/smile2.svg": "/react-final-project/static/media/smile2.79d4c1348482a6f5d281474d81a5f975.svg",
     "static/media/img5.png": "/react-final-project/static/media/img5.e3713f1d19938c35bb8f.png",
     "static/media/img6.png": "/react-final-project/static/media/img6.9b5da3a8645e7f97e448.png",
     "static/media/grapes.png": "/react-final-project/static/media/grapes.9060a9ef9a49e7cd9e0f.png",
@@ -28,11 +32,11 @@
     "static/media/select.svg": "/react-final-project/static/media/select.2e5b71c20ff98d0cdf560bc163f70a28.svg",
     "static/media/filter.svg": "/react-final-project/static/media/filter.74289f17e0e446e146651dc54ff89813.svg",
     "static/media/plus.svg": "/react-final-project/static/media/plus.3fd698ba19dde974447b47366eff5648.svg",
-    "main.d8d8881f.css.map": "/react-final-project/static/css/main.d8d8881f.css.map",
-    "main.d616423a.js.map": "/react-final-project/static/js/main.d616423a.js.map"
+    "main.206d383f.css.map": "/react-final-project/static/css/main.206d383f.css.map",
+    "main.f925f430.js.map": "/react-final-project/static/js/main.f925f430.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8d8881f.css",
-    "static/js/main.d616423a.js"
+    "static/css/main.206d383f.css",
+    "static/js/main.f925f430.js"
   ]
 }
