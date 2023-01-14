@@ -10,18 +10,29 @@ const NavPanel = () => {
     const [isBurger, setIsBurger] = useState(false)
     const [isActive, setIsActive] = useState(false)
     const {width} = useWindowDimensions()
+    const div = document.querySelector(".burger-panel");
 
-    const handleClick =()=>{
+    if (isBurger && isActive){
+        document.addEventListener("click", (e)=>{
+            const withinBoundaries = e.composedPath().includes(div);
+
+            if ( ! withinBoundaries ) {
+                setIsActive(!isActive)
+            }
+        })
+    }
+
+    const handleClick = () => {
         setIsActive(!isActive);
     }
 
-   useEffect(() => {
-       if(width <= 980){
-           setIsBurger(true)
-       }else {
-           setIsBurger(false)
-       }
-   }, [width])
+    useEffect(() => {
+        if (width <= 980) {
+            setIsBurger(true)
+        } else {
+            setIsBurger(false)
+        }
+    }, [width])
 
     return (
         <div className={`flex column ${isBurger && "burger-panel"} ${!isActive ? "active-p" : "disable-p"}`}>
