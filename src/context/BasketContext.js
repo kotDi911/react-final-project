@@ -12,7 +12,7 @@ export const BasketProvider = (props) => {
         if (cards.length > 0) {
             setIsEmpty(false)
         }
-        if (basketCounter === 1) {
+        if (cards.length === 1) {
             setIsShowPanel(true);
         }
         counter()
